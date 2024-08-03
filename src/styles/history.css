@@ -21,6 +21,10 @@
     border: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 @media (width >=80em){
   #history{
     height: 23.2rem;

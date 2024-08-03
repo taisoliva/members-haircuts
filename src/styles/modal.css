@@ -1,0 +1,52 @@
+.overlay {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(5px); 
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    background-color: var(--gray-300);
+
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button{
+    width: 5.5rem;
+    height: 2.5rem;
+    background-color: var(--pink);
+    border-radius: 20px;
+    border: 1px solid white;
+
+    margin-top: 2rem;
+}
+
+.modal-button:hover{
+    background-color: pink;
+    cursor: pointer;
+}

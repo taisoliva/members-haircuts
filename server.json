@@ -1,5 +1,5 @@
 {
-"clients": [
+  "clients": [
     {
       "id": "124-537-835-230",
       "name": "Natália Miranda",
@@ -31,9 +31,9 @@
         }
       ],
       "loyaltyCard": {
-        "totalCuts": 7,
-        "cutsNeeded": 10,
-        "cutsRemaining": 3
+        "totalCuts": 10,
+        "cutsRemaining": 0,
+        "cutsNeeded": 10
       }
     },
     {
@@ -87,9 +87,9 @@
         }
       ],
       "loyaltyCard": {
-        "totalCuts": 5,
+        "totalCuts": 4,
         "cutsNeeded": 8,
-        "cutsRemaining": 3
+        "cutsRemaining": 4
       }
     }
   ]

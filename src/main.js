@@ -8,6 +8,7 @@ import "./styles/section.css"
 import "./styles/loading-bar.css"
 import "./styles/history.css"
 import "./styles/desktop.css"
+import "./styles/modal.css"
 
 import "./modules/form"
-import "./modules/check-display"
+import "./modules/modal"

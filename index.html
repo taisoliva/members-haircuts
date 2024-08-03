@@ -23,7 +23,7 @@
               type="text"
               placeholder="ID do cartão"
             />
-            <button class="button-enter" type="submit">
+            <button class="button-enter" type="submit" disabled>
               <img src="./src/assets/arrow-elbow-down-left.svg" alt="" />
             </button>
           </form>
@@ -40,11 +40,11 @@
           />
         </div>
         <div>
-          <h2 class="title">Natália Miranda</h2>
-          <p>Cliente desde 18/09/2023</p>
+          <h2 id="name" class="title">Natália Miranda</h2>
+          <p id="client-since">Cliente desde 18/09/2023</p>
         </div>
       </section>
-  
+
       <section id="loyalty" class="p-1">
         <div class="grid grid-colums-1 gap-1">
           <div>
@@ -56,8 +56,8 @@
           </div>
         </div>
         <main class="grid grid-colums-5 grid-rows-2 gap-0.5">
-          <div class="flex justify-items align-items">
-            <img src="./src/assets/PinCheck.png" alt="" />
+          <div id="check" class="flex justify-items align-items">
+            <img class="hidden" src="./src/assets/PinCheck.png" alt="" />
           </div>
           <div class="flex justify-items align-items">
             <img src="./src/assets/PinCheck.png" alt="" />
@@ -88,35 +88,49 @@
           </div>
         </main>
       </section>
-  
+
       <section id="haircut" class="p-1">
         <div class="flex flex-col justify-items">
           <p class="flex align-items gap-0.25">
-            <span class="title">3</span> cortes restantes
+            <span id="cutsRemaining" class="title">3</span> cortes restantes
           </p>
           <div class="flex align-items gap-0.25">
-            <div id="loadingBar" class="loading-bar fill"></div> <p>7 de 10</p>
+            <div id="loadingBar" class="loading-bar fill"></div>
+            <p>
+              <span id="totalCuts">7</span> de <span id="cutsNeeded">10</span>
+            </p>
           </div>
         </div>
         <div class="img-gift">
           <img src="./src/assets/PinGift.svg" alt="" />
         </div>
       </section>
-  
+
       <section id="history" class="p-1">
         <div class="flex justify-between">
           <h3>Histórico</h3>
-          <p>7 cortes</p>
+          <p><span id="totalCuts">7</span> cortes</p>
         </div>
         <div class="divide"></div>
-        <div class="flex justify-between mb-1">
-          <div>
-            <p class="date">29/04/2024</p>
-            <p>18:30</p>
-          </div>
-          <img src="./src/assets/check.svg" alt="check icon">
-        </div>
+        <ul>
+          <li class="flex justify-between mb-1">
+            <div>
+              <p class="date">29/04/2024</p>
+              <p>18:30</p>
+            </div>
+            <img src="./src/assets/check.svg" alt="check icon" />
+          </li>
+        </ul>
       </section>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2 class="text-center">Parabéns! Seu próximo corte é gratuito!</h2>
+        <img src="./src/assets/PinGift.svg" alt="" />
+        <button id="times" class="modal-button">Ok</button>
+      </div>
     </div>
   </body>
 </html>

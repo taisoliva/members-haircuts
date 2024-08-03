@@ -66,6 +66,12 @@ h3 {
   text-transform: var(--uppercase);
 }
 
+h2 {
+  font: var(--font-bold) var(--text-base) / var(--leading) var(--ff-oxygen);
+  color: var(--gray-500);
+  text-transform: var(--uppercase);
+}
+
 p{
     font: var(--font-regular) var(--text-xs) / var(--leading) var(--ff-oxygen);
     color: var(--gray-500);
