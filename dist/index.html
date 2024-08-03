@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Member Club</title>
+  <script defer src="main.js"></script></head>
+  <body class="container">
+    <head>
+      <div class="text-center">
+        <img src="./src/assets/Logo.png" alt="member club" />
+        <div class="input-container">
+          <form>
+            <input
+              id="card-id"
+              class="input"
+              type="text"
+              placeholder="ID do cartão"
+            />
+            <button class="button-enter" type="submit">
+              <img src="./src/assets/arrow-elbow-down-left.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </head>
+
+    <section id="profile" class="p-1 flex gap-1 align-items justify-items">
+      <div>
+        <img
+          src="https://randomuser.me/api/portraits/men/1.jpg"
+          alt="Profile Picture"
+        />
+      </div>
+      <div>
+        <h2 class="title">Natália Miranda</h2>
+        <p>Cliente desde 18/09/2023</p>
+      </div>
+    </section>
+
+    <section id="loyalty" class="p-1">
+      <div class="grid grid-colums-1 gap-1">
+        <div>
+          <h3>Cartão Fidelidade</h3>
+          <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
+        </div>
+        <div class="tag-id">
+          <h3>ID: 124-537-835-230</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-1">
+      <main class="grid grid-colums-5 grid-rows-2 gap-0.5">
+        <div class="flex justify-items align-items">
+          <img src="./src/assets/PinCheck.png" alt="" />
+        </div>
+        <div class="flex justify-items align-items">
+          <img src="./src/assets/PinCheck.png" alt="" />
+        </div>
+        <div class="flex justify-items align-items">
+          <img src="./src/assets/PinCheck.png" alt="" />
+        </div>
+        <div class="flex justify-items align-items">
+          <img src="./src/assets/PinCheck.png" alt="" />
+        </div>
+        <div class="flex justify-items align-items">
+          <img src="./src/assets/PinCheck.png" alt="" />
+        </div>
+        <div class="flex justify-items align-items">
+          <img src="./src/assets/PinCheck.png" alt="" />
+        </div>
+        <div class="flex justify-items align-items">
+          <img src="./src/assets/PinCheck.png" alt="" />
+        </div>
+        <div class="flex justify-items align-items">
+          <img src="./src/assets/PinCheck.png" alt="" />
+        </div>
+        <div class="flex justify-items align-items" onclick={increaseFill()}>
+          <img src="./src/assets/PinCheck.png" alt="" />
+        </div>
+        <div class="flex justify-items align-items">
+          <img id="gift" src="./src/assets/gift-solid.svg" alt="" />
+        </div>
+      </main>
+    </section>
+
+    <section class="p-1">
+      <p class="flex align-items gap-0.25"><span class="title">3</span> cortes restantes</p>
+      <div class="loading-bar fill"></div>
+    </section>
+  </body>
+</html>

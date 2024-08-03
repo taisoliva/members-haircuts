@@ -1,0 +1,33 @@
+@media (width >= 80em) {
+  .desktop {
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 20rem 35.5rem;
+    grid-template-rows: 7rem 5.625rem 5.625rem 5.625rem 7.3125rem;
+    width: 100%;
+
+    grid-column-gap: 1rem;
+    display: grid;
+    margin: 0 auto;
+
+    & section:nth-child(1) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    & section:nth-child(2) {
+      grid-column: 2;
+      grid-row: 1/5;
+    }
+
+    & section:nth-child(3) {
+      grid-column: 2;
+      grid-row: 5;
+    }
+
+    & section:nth-child(4) {
+      grid-column: 1;
+      grid-row: 2/5;
+    }
+  }
+}

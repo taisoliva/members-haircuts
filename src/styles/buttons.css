@@ -1,0 +1,27 @@
+.button-enter {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-400);
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  overflow: hidden;
+  right: 1rem;
+
+  background-color: var(--gray-600);
+
+  img {
+    width: 1.5rem;
+    height: 1.5rem; 
+    object-fit: contain;
+  }
+}
+
+.button-enter:hover{
+    background-color: var(--gray-500);
+    cursor: pointer;
+}

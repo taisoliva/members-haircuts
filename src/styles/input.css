@@ -1,0 +1,33 @@
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 3.5rem;
+
+  background-color: var(--gray-100);
+
+  border-radius: 0.75rem;
+  border: 1px solid var(--gray-400);
+
+  font: var(--font-regular) var(--text-base) / var(--leading) var(--ff-oxygen);
+  color: var(--gray-500);
+  padding: 1.5rem;
+
+  outline: none;
+}
+
+.input:focus {
+
+    border: 2px solid var(--pink);
+}
+
+@media (width>=80em){
+  .input-container {
+    width: 30%;
+    margin: auto;
+  }
+
+}
